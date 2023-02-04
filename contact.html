@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChristopherMaxwell - Contact</title>
+  <!-- main css -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--favicon img -->
+  <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/59a5ac1eda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="back-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-chevron-double-up"></i></button>
+  </div>    
+  <!-- navbar -->
+  <nav class="sticky-top">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <div id="menuIcon">
+   <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+      </div>
+    </label>
+    <label class="logo"><a class="text-decoration-none" href="home.html">ChristopherMaxwell</a></label>
+    <ul class="menu-list menu-lists">
+      <div class="menu-item">
+        <li><a href="home.html">Home</a></li>
+        <span class="menu-icon"><a href="home.html" class="text-decoration-none"><i class="bi bi-house-fill"></i></a></span>
+      </div>
+      <div class="menu-item">
+        <li><a href="home.html">Skills</a></li>
+        <span class="menu-icon"><a href="home.html" class="text-decoration-none"><i class="bi bi-bookmark-check-fill"></i></a></span>
+      </div>
+      <div class="menu-item">
+        <li><a href="home.html">Projects</a></li>
+        <span class="menu-icon"><a href="home.html" class="text-decoration-none"><i class="bi bi-folder-fill"></i></a></span>
+      </div>
+      <div class="menu-item">
+        <li><a href="home.html">About</a></li>
+        <span class="menu-icon"><a href="home.html" class="text-decoration-none"><i class="bi bi-person-fill"></i></a></span>
+      </div>
+    </ul>
+  </nav>
+  <!-- contact inner -->
+  <section id="contact-page">
+    <div class="contacts-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12">
+                    <h4>Get In Touch</h4>
+                    <hr>
+                    <form onsubmit="sendEmail(); reset(); return false;" novalidate>
+                        <div class="row">
+                            <div class="input col-md-6 mb-2">
+                                <input class="form-control input1" type="text" formnovalidate onkeyup="validateName()" id="contact-name" placeholder="Enter your name">
+                                <p id="name-error"></p>
+                            </div>
+                            <div class="input col-md-6 mb-2">
+                                <input class="form-control" type="email" formnovalidate onkeyup="validateEmail()" id="contact-email" placeholder="Email">
+                                <p id="email-error"></p>
+                            </div>
+                            <div class="input col-md-12 mb-2">
+                                <input class="form-control" type="text" formnovalidate id="contact-subject" onkeyup="validateSubject()"  placeholder="Enter Subject (optional)">
+                                <p id="subject-error"></p>
+                            </div>
+                            <div class="input col-md-12">
+                                <textarea class="form-control" formnovalidate id="contact-text" onkeyup="validateText()" placeholder="Enter Your Message" input cols="30" rows="10"></textarea>
+                                <p class="text-error" id="text-error"></p>
+                            </div>
+                        </div>
+                        <div class="submit-contact col-md-4">
+                            <button class="mt-2 mb-5" type="submit" onclick="validateForm()">Submit</button>
+                            <p id="submit-error"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <h4>Contacts</h4>
+                    <hr>
+                    <div class="main-contact mb-5 justify-content-start">
+                        <p><a href="mailto:christophermaxwell20005@gmail.com"><i class="bi bi-envelope-fill me-1 i2"></i> christophermaxwell20005@gmail.com</a></p>
+                        <p><a href="tel:+234903449570"><i class="fa-sharp fa-solid fa-phone me-1 i2"></i> +234 9034493570</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="popup" id="popUp">
+                <img src="/assets/img/mark.png" alt="success-mark">
+                <h2>Thank You!</h2>
+                <p>The response will be sent to the email address you've indicated within 2 business days. If it's urgent, I encourage you to call me at <a href="tel:+2349034493570"> +2349034493570 </a> Have a wonderful day!</p>
+                <a class="btn text-decoration-none text-light" href="home.html">Ok</a>
+            </div>
+          </div>    
+    </div>
+</section>
+  <!-- footer -->
+  <footer class="py-3">
+    <div class="footer">
+      <h4>FIND ME ON</h4>
+      <div class="social-handle my-4">
+          <a href="https://twitter.com/Pro_mcode"><img class="mx-2" src="/assets/img/twitter.png" alt=""></a> 
+          <a href="https://linkedin.com/in/Pro-Mcode"><img class="mx-2" src="/assets/img/linkedin.png" alt=""></a>
+          <a href="https://github.com/maxwell20005"><img class="mx-2" src="/assets/img/gitlogo.png" alt=""></a>
+          <a href="https://www.facebook.com/mcode05"><img class="mx-2" src="/assets/img/facebook.png" alt=""></a>
+      </div>
+      <h6>Copyright © 2023 Christopher Maxwell. All Rights Reserved</h6>
+    </div>
+  </footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    let menuIcon = document.getElementById("menuIcon")
+    menuIcon.onclick = function(){
+    menuIcon.classList.toggle("open-menu");
+    }
+    var nameError = document.getElementById('name-error');
+    var emailError = document.getElementById('email-error');
+    var subjectError = document.getElementById('subject-error');
+    var textError = document.getElementById('text-error');
+    var submitError = document.getElementById('submit-error');
+
+    function validateName(){
+    var name = document.getElementById('contact-name').value;
+
+    if(name.length == 0){
+        nameError.innerHTML = 'Please provide a unique name.';
+        return false;
+    }
+    if(name.length == 1){
+        nameError.innerHTML = 'Please provide a unique name.';
+        return false;
+    }
+    if(name.length == 2){
+        nameError.innerHTML = 'Please provide a unique name.';
+        return false;
+    }
+    nameError.innerHTML = '<i class="fas fa-check-circle i1"></i>';
+    return true;
+    }
+    function validateEmail(){
+    var email = document.getElementById('contact-email').value;
+
+    if(email.length == 0){
+        emailError.innerHTML = 'Please provide a valid email.';
+        return false;
+    }
+    if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+        emailError.innerHTML = '<p class="email-err">Email not valid</p>';
+        return false;
+    }
+    emailError.innerHTML = '<i class="fas fa-check-circle i1"></i>';
+    return true;
+    }
+    function validateSubject(){
+    var subject = document.getElementById('contact-subject').value;
+    // var required = 10;
+    // var minimum = subject.length;
+    // if(minimum > 0){
+    //     subjectError.innerHTML = 'Please provide a unique subject.';
+    //     return false;
+    // }
+    subjectError.innerHTML = '<i class="fas fa-check-circle i2"></i>';
+    return true;
+    }
+
+
+    // if(subjects.length == 0){
+    //     subjectError.innerHTML = 'Please provide a unique subject.';
+    //     return false;
+    // }
+    // if(subjects.length == 1){
+    //     subjectError.innerHTML = 'Please provide a unique subject.';
+    //     return false;
+    // }
+    // if(subjects.length == 2){
+    //     subjectError.innerHTML = 'Please provide a unique subject.';
+    //     return false;
+    // }
+    // subjectError.innerHTML = '<i class="fas fa-check-circle i2"></i>';
+    // return true;
+    // }
+    function validateText(){
+    var text = document.getElementById('contact-text').value;
+    var required = 30;
+    var left = required - text.length;
+
+    if(left > 0){
+        textError.innerHTML = left + ' more characters required';
+        return false;
+    }
+    textError.innerHTML = '<i class="i3 fas fa-check-circle"></i>';
+    return true;
+    }
+    function validateForm(){
+    if(!validateName() || !validateEmail() || !validateText()){
+        submitError.style.display = 'block';
+        submitError.innerHTML = 'Please fill all field appropriately.';
+        setTimeout(function(){ submitError.style.display = 'none';}, 5000);
+        return false;
+    }
+    }
+    function sendEmail(){
+    if(validateName() & validateEmail() & validateText()){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "promcode01@gmail.com",
+        Password : "03DADFC5E1DA74EC789D4D71F10431F80987",
+        To : 'christophermaxwell20005@gmail.com',
+        From : "promcode01@gmail.com",
+        // Subject : document.getElementById("contact-subject").value,
+        Body : "Name: " + document.getElementById("contact-name").value
+            + " <br> Email: " + document.getElementById("contact-email").value
+            + " <br> Subject: " + document.getElementById("contact-subject").value
+            + " <br> Message: " + document.getElementById("contact-text").value
+        }).then(
+        message => popUp.classList.add("open-popup")
+        );
+        return true;
+    }
+    }
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <!-- swipper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- main js -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
