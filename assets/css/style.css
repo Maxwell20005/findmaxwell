@@ -6,13 +6,6 @@
     font-family: 'Oswald', sans-serif;
 
 }
-/* :root{
-    --primary-color:#6195ff;
-    --secondary-color:#333;
-    --dark-color:#000;
-    --light-color:#f4f4f4;
-    --header-opacity: 0.7
-} */
 :root{
     --fixed-color: rgb(199, 21, 133);
     --primary-color: rgb(128, 0, 128);
@@ -410,7 +403,7 @@ nav .menu-list li .active{
     text-shadow: 1.5px 1.5px 3px var(--dark-color);
 }
 #about .lists h6{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 #about .lists h6 i{
@@ -629,65 +622,6 @@ footer{
 }
 .footer-text span a{
     text-decoration: none;
-}
-/* footer .footer-content span{
-    padding-left: 10px;
-}  
-footer .footer-content{
-    text-align: center;
-}
-footer .footer-content span a i{
-    font-size: 24px;
-}
-footer .footer-content span a .bi-linkedin{
-    color: #0072b1;
-}
-footer .footer-content span a .bi-facebook{
-    color: #4267B2;
-}
-footer .footer-content span a .bi-twitter{
-    color: #00acee;
-}
-footer .footer-content span a .bi-envelope{
-    color: #BB001B;
-}
-footer .footer-content span a .bi-github{
-    color: #171515;
-}
-footer .footer-content span a .bi-whatsapp{
-    color: #25D366;
-}
-footer .footer-content span a i:hover{
-    color: var(--primary-color);
-}
-#contact .container form .form-floating label{
-    color: rgba(0, 0, 0, 0.604);
-}
-#contact form .form-control{
-    border: 0;
-    background: #e7f0fe;
-} */
-/* index loader */
-.preloader{
-    background: #000;
-}
-.loader-content #circle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-}
-.loader-content .loader{
-    padding: 10px;
-    width: calc(100% - 0px);
-    height: calc(100% - 0px);
-    border: 1px solid #000;
-    border-radius: 60%;
-    border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
-    animation: rotates 5s linear infinite;
 }
 @keyframes rotates{
     100% {
