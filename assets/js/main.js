@@ -1,6 +1,3 @@
-AOS.init();
-
-
 const spans = document.querySelectorAll('.progress-bar span');
 
 spans.forEach((span) => {
