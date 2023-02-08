@@ -900,9 +900,6 @@ footer{
         margin-right: 30px;
         margin-left: 5px;
     }
-    #banner .resume{
-        margin-bottom: -40px;
-    }
 }
 @media only screen and (max-width: 720px) {
     #projects .container .rows .card{
